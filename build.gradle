@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+project.group = 'com.netaporter'
+project.version = "$version"
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
+repositories {
+    maven { url 'http://artifactory.dave.net-a-porter.com:8081/artifactory/repo'}
+}
+
+
+
